@@ -66,9 +66,6 @@ pluscode_eastneighbour <- function(pluscode) {
   } else {
     d2
   }
-  #if(n1>9 | n1<1){ 
-  #  stop("Neighbour pluscode is out of bounds")
-  #}
   pluscode_neighbour<-if(pluscode_length == 10) {
     paste0(d1,n2,d3,n4,d5,n6,d7,n8,"+",d9,n10)
   } else if(pluscode_length == 8) {
