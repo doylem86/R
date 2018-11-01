@@ -1,0 +1,11 @@
+pluscode_neighbours <- function(pluscode) {
+  neighbours<-list("north" = pluscode_northneighbour(pluscode),
+                   "northeast" = pluscode_northeastneighbour(pluscode),
+                   "east" = pluscode_eastneighbour(pluscode),
+                   "southeast" = pluscode_southeastneighbour(pluscode),
+                   "south" = pluscode_southneighbour(pluscode),
+                   "southwest" = pluscode_southwestneighbour(pluscode),
+                   "west" = pluscode_westneighbour(pluscode),
+                   "northwest" = pluscode_northwestneighbour(pluscode))
+  return(neighbours)
+}
